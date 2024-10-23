@@ -172,7 +172,7 @@ class SplitFiles(luigi.Task):
 
 
 class ZipDataset(luigi.Task):
-  """Класс задачи архивирования файлов с обработанными данными"""
+  """Класс, реализующий создание архива с обработанными файлами"""
 
   dataset_name = luigi.Parameter()
   data_path = luigi.Parameter(default='data')
