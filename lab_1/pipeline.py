@@ -34,7 +34,7 @@ class GetDataset(luigi.Task):
 
 
 class UnzipDataset(luigi.Task):
-  """Класс задачи разархивирования набора данных"""
+  """Класс, реализующий задачу разархивирования набора данных"""
 
   dataset_name = luigi.Parameter()
   data_row_path = luigi.Parameter(default='data_row')
